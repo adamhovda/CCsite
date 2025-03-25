@@ -25,6 +25,3 @@ document.getElementById("bookingForm").appendChild(sel); // put it into the DOM
 
 
 
-function alert() {
-    alert("hello");
-}
