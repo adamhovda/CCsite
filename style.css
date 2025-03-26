@@ -57,6 +57,10 @@
     text-shadow: 1px 4px 4px #555555;
   }
 
+  body {
+
+  }
+
   /* HTML: <img class="parallelogram" src="" alt=""> */
 .parallelogram {
     --p: 50px; /* control the shape (can be percentage) */
@@ -89,7 +93,7 @@
 
 
 .offcanvas-logo {
-    height: 50px;
+    height: 75px;
 
 }
 
@@ -148,7 +152,13 @@ main {
 .section-title {
     
     text-align: center;
-    font-size: 30px;
+    font-size: 10vw;
+/*     color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5); */
 
 
 /*     background: url(images/Golden_Glitter_Background.jpg);
@@ -158,6 +168,8 @@ main {
 
 
 }
+
+
 
 .section {
     background-color: #ead5cf;
@@ -190,6 +202,11 @@ main {
     width: 85vw;
 
 
+
+}
+
+th, td {
+    background-color: #BACDCE !important;
 }
 .hours {
 
@@ -205,8 +222,10 @@ main {
 }
 
 footer {
-    background-color: white;
+    background-color: #BACDCE;
     width: 85vw;
+    padding-top: 20px;
+
 
 }
 
