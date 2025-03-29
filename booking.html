@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Meow+Script&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 
     <title>Document</title>
 </head>
@@ -55,49 +57,54 @@
 
 <main>
     <form id="bookingForm">
-        <div class="m-3">
+<!--         <div class="m-3">
           <label for="InputEmail" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+          <input type="email" name="email"  class="form-control" id="InputEmail" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="m-3">
+        </div> -->
+        <div class="m-3 form-floating ">
+          <input type="text" name="name" class="form-control" id="inputName" placeholder="name" required>
           <label for="inputName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="inputName">
+
         </div>
-        <div class="m-3">
-            <label for="inputPhone" class="form-label">Phone Number</label>
-            <input type="number" class="form-control" id="inputPhone">
+        <div class="m-3 form-floating">
+          <input type="number" name="phonenumber" class="form-control" id="inputPhone" placeholder="phonenumber" required>
+          <label for="inputPhone" class="form-label">Phone Number</label>
+
+          </div>
+          <div class="m-3 form-check">
+            <input type="radio" id="call" name="contact-preference" value="call" required>
+            <label for="call">Call</label>
+            <input type="radio" id="text" name="contact-preference" value="text">
+            <label for="text">Text</label>
           </div>
         <div class="m-3">
             <h4>Preferred day(s)</h4>
             <div class="mb-3 form-check-inline">
-            <input type="checkbox" class="form-check-input" id="day1">
+            <input type="checkbox" name="day1" value="Monday" class="form-check-input" id="day1">
             <label class="form-check-label" for="day1">M</label>
             </div>
             <div class="mb-3 form-check-inline">
-                <input type="checkbox" class="form-check-input" id="day2">
+                <input type="checkbox" name="day2" value="Tuesday" class="form-check-input" id="day2">
                 <label class="form-check-label" for="day2">T</label>
             </div>        
             <div class="mb-3 form-check-inline">
-                <input type="checkbox" class="form-check-input" id="day3">
+                <input type="checkbox" name="day3" value="Wednesday" class="form-check-input" id="day3">
                 <label class="form-check-label" for="day3">W</label>
             </div>        
             <div class="mb-3 form-check-inline">
-                <input type="checkbox" class="form-check-input" id="day4">
+                <input type="checkbox" name="day4" value="Thursday" class="form-check-input" id="day4">
                 <label class="form-check-label" for="day4">Th</label>
             </div>       
             <div class="mb-3 form-check-inline">
-                <input type="checkbox" class="form-check-input" id="day5">
+                <input type="checkbox" name="day5" value="Friday" class="form-check-input" id="day5">
                 <label class="form-check-label" for="day5">F</label>
             </div>        
             <div class="mb-3 form-check-inline">
-                <input type="checkbox" class="form-check-input" id="day6">
+                <input type="checkbox" name="day6" value="Saturday" class="form-check-input" id="day6">
                 <label class="form-check-label" for="day6">Sa</label>
             </div>        
-            <div class="mb-3 form-check-inline">
-                <input type="checkbox" class="form-check-input" id="day7">
-                <label class="form-check-label" for="day7">Su</label>
-            </div>
+
         </div>
           <div class="m-3">
             <label for="services">Services</label>
@@ -109,85 +116,92 @@
                 <option value="polishChange">Polish Change</option>
 
             </select>
-            <button id="serviceDropdown" onclick="addService()">Click me</button>
+
 
           </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" name="additional-comments" id="additional-comments" placeholder="Any additional comments?"></textarea>
+            <label for="additional-comments" class="form-label">Comments</label>
+          </div>
         <div class="container-fluid">
-        <button type="submit" class="btn btn-primary justify-content-center" style="width: 80%;">Submit</button>
+        <button type="submit" value="send" btn btn-primary justify-content-center style="width: 80%;">Submit</button>
         </div>
       </form>
 </main>
 
-<!--     <div>
-          <iframe
-      width="450"
-      height="250"
-      frameborder="0" style="border:0"
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDrqaHY5EJKQwQzSaPONjXVVnJ8qU1wvQA&q=creative+catalyst+nails,Goodyear+AZ" 
-      allowfullscreen>
-    </iframe>
-    </div> -->
+<footer class="container-fluid pb-4">
+      
+  <div class="hours-map row mx-auto justify-content-between">
+    <div class="col-6 col-md-4">
+    <table class="table table-sm hours pe-2">
 
-    <footer class="container">
-      <div class="row">
-      <table class="table col">
-        <thead>
-          <tr>
-            <th scope="col">Hours</th>
+      <tbody>
+        <tr>
+          <th scope="row">Monday</th>
+          <td>Closed</td>
+        </tr>
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td>9am - 7pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Wednesday</th>
+          <td>Closed</td>
+        </tr>
+        <tr>
+          <th scope="row">Thursday</th>
+          <td>9am - 7pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Friday</th>
+          <td>9am - 7pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday</th>
+          <td>9am - 7pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Sunday</th>
+          <td>Closed</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
 
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Monday</th>
-            <td>Closed</td>
-          </tr>
-          <tr>
-            <th scope="row">Tuesday</th>
-            <td>9:00 AM - 7:00 PM</td>
-          </tr>
-          <tr>
-            <th scope="row">Wednesday</th>
-            <td>Closed</td>
-          </tr>
-          <tr>
-            <th scope="row">Thursday</th>
-            <td>9:00 AM - 7:00 PM</td>
-          </tr>
-          <tr>
-            <th scope="row">Friday</th>
-            <td>9:00 AM - 7:00 PM</td>
-          </tr>
-          <tr>
-            <th scope="row">Saturday</th>
-            <td>9:00 AM - 7:00 PM</td>
-          </tr>
-          <tr>
-            <th scope="row">Sunday</th>
-            <td>Closed</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="col-6 col-md-4 text-center">
+        <h5>ADDRESS</h5>
+        <p><a href="https://www.google.com/search?q=13220+E+Van+Buren+St+Suite+%23104%2C+Goodyear%2C+AZ+85338&rlz=1C1VDKB_enUS1023US1023&oq=13220+E+Van+Buren+St+Suite+%23104%2C+Goodyear%2C+AZ+85338&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBBzYwNWowajmoAgCwAgE&sourceid=chrome&ie=UTF-8" class="link-secondary"> E Van Buren St Suite #104, Goodyear, AZ 85338</a></p>
 
-<!--           <div class="col">
-                  <iframe
-              width="450"
-              height="250"
-              frameborder="0" style="border:0"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDrqaHY5EJKQwQzSaPONjXVVnJ8qU1wvQA&q=creative+catalyst+nails,Goodyear+AZ" 
-              allowfullscreen>
-            </iframe>
-        </div> -->
+        <h5>EMAIL</h5>
+        <p><a href="mailto:creativecatalyst@gmail.com" class="link-secondary">creativecatalyst@gmail.com</a></p>
 
-  </div>
-    </footer>
+        <h5>PHONE</h5>
+        <p><a href="tel: 6233774565" class="link-secondary">623-377-4564</a></p>
+    </div>
+
+          <div class="map col-12 col-md-4">
+            <iframe
+        width= 100%
+        height= 100%
+        frameborder="0" style="border:0"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDrqaHY5EJKQwQzSaPONjXVVnJ8qU1wvQA&q=creative+catalyst+nails,Goodyear+AZ" 
+        allowfullscreen>
+        </iframe>
+    </div>
+
+      </div>
+
+
+</footer>
 
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

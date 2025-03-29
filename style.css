@@ -27,6 +27,13 @@
     
   }
 
+  .domine-p {
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
   .yellowtail-regular {
     font-family: "Yellowtail", cursive;
     font-weight: 400;
@@ -57,6 +64,11 @@
     text-shadow: 1px 4px 4px #555555;
   }
 
+  .icon {
+    width: 45px;
+ 
+  }
+
   body {
 
   }
@@ -73,6 +85,7 @@
 
 .navbar-primary {
     width: 85vw;
+    z-index: 5;
 }
 
 .navbar-secondary {
@@ -173,9 +186,12 @@ main {
 
 .section {
     background-color: #ead5cf;
-    color: white;
+    color: black;
     width: 85vw;
     padding: 20px;
+    background-image: url(images/pexels-moose-photos-170195-1029894.jpg);
+    background-size: cover;
+    font-size: small;
 
 
 
@@ -184,6 +200,10 @@ main {
 
 .about {
     padding: 20px;
+}
+
+.main-slideshow {
+    width: 85vw;
 }
 
 .service-overlay {
@@ -195,6 +215,10 @@ main {
     position: relative;
     text-align: center;
     background-color:white;
+    width: 85vw;
+}
+
+.contact-links {
     width: 85vw;
 }
 
