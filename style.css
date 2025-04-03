@@ -30,7 +30,7 @@
   .domine-p {
     font-family: "Domine", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
   }
 
@@ -70,9 +70,6 @@
  
   }
 
-  body {
-
-  }
 
   /* HTML: <img class="parallelogram" src="" alt=""> */
 .parallelogram {
@@ -103,6 +100,11 @@
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+
+.link-button {
+    background-color: #DDF0F6;
+
 }
 
 
@@ -188,7 +190,7 @@ main {
 .section {
     background-color: #ead5cf;
     color: black;
-    width: 85vw;
+    width: 100vw;
     padding: 20px;
     background-image: url(images/pexels-moose-photos-170195-1029894.jpg);
     background-size: cover;
@@ -232,7 +234,7 @@ main {
 }
 
 th, td {
-    background-color: #BACDCE !important;
+    background-color: #DDF0F6 !important;
 }
 .hours {
 
@@ -246,7 +248,7 @@ th, td {
 }
 
 footer {
-    background-color: #BACDCE;
+    background-color: #DDF0F6;
     width: 85vw;
     padding-top: 20px;
 
