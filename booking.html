@@ -16,44 +16,49 @@
     <title>Document</title>
 </head>
 
- 
-            
 
 
 <body>
 
 
 
-  <nav class="navbar py-4">
-    <div class="container-fluid">
-      <div></div>
-      <span class="mb-0 catamaran-title">CREATIVE CATALYST</span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+  <nav class="navbar navbar-secondary container-fluid navbar-light mx-0 justify-content-between">
 
-    </div>
+    <a class="navbar-brand ps-4" href="index.html">
+      <img src="images/ccnlogoclean.png" alt="creative catalyst logo" width="75" height=100%>
+    </a>
 
 
-  </nav>   
+  <h1 class="catamaran-title section-title centered">BOOKING</h1>
 
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-      <h5 id="offcanvasRightLabel"><figure>
-        <img class="img-fluid offcanvas-logo" src="images/ccnlogoclean.png">
-      </figure></h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="list-group list-group-flush">
-        <a href="index.html" class="list-group-item list-group-item-action">Home</a>
-        <a href="booking.html" class="list-group-item list-group-item-action">Book An Appointment</a>
-        <a href="gallery.html" class="list-group-item list-group-item-action">Gallery</a>
-        <a href="tel: 6233774565" class="list-group-item list-group-item-action">Call Us</a>
-      </div>
-    </div>
+    <button class="navbar-toggler  p-4 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- <span class="mb-0 roboto-title position-absolute top-50 start-50 translate-middle">CREATIVE CATALYST</span> -->
+
+</nav> 
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel"><figure>
+      <img class="img-fluid offcanvas-logo" src="images/ccnlogoclean.png">
+    </figure></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
+  <div class="offcanvas-body domine-p">
+    <div class="list-group list-group-flush">
+      <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+      <a href="booking.html" class="list-group-item list-group-item-action disabled">Book An Appointment</a>
+      <a href="gallery.html" class="list-group-item list-group-item-action">Gallery</a>
+      <a href="tel: 6233774565" class="list-group-item list-group-item-action">Call Us</a>
+      <a href="https://www.instagram.com/creative_catalyst_nails08/" target="_blank" class="list-group-item list-group-item-action p-2"><img class="icon" src="images/instagram.svg"></a>
+<!--             <img class="icon" src="images/facebook.svg">-->       
+         </div>
+  </div>
+</div>
 
 
-  <h1 class="catamaran-title section-title">Booking</h1>
+<!--   <h1 class="catamaran-title section-title">Booking</h1> -->
 
 <main>
     <form id="bookingForm">
@@ -62,23 +67,23 @@
           <input type="email" name="email"  class="form-control" id="InputEmail" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div> -->
-        <div class="m-3 form-floating ">
+        <div class="m-3 my-5 form-floating ">
           <input type="text" name="name" class="form-control" id="inputName" placeholder="name" required>
           <label for="inputName" class="form-label">Name</label>
 
         </div>
-        <div class="m-3 form-floating">
+        <div class="m-3 my-5 form-floating">
           <input type="number" name="phonenumber" class="form-control" id="inputPhone" placeholder="phonenumber" required>
           <label for="inputPhone" class="form-label">Phone Number</label>
 
           </div>
-          <div class="m-3 form-check">
+          <div class="m-3 my-5 form-check p-0">
             <input type="radio" id="call" name="contact-preference" value="call" required>
             <label for="call">Call</label>
             <input type="radio" id="text" name="contact-preference" value="text">
             <label for="text">Text</label>
           </div>
-        <div class="m-3">
+        <div class="m-3 my-5">
             <h4>Preferred day(s)</h4>
             <div class="mb-3 form-check-inline">
             <input type="checkbox" name="day1" value="Monday" class="form-check-input" id="day1">
@@ -106,7 +111,7 @@
             </div>        
 
         </div>
-          <div class="m-3">
+          <div class="my-5">
             <label for="services">Services</label>
             <select name="services" id="services">
                 <option value="">Choose Services</option>
@@ -120,14 +125,24 @@
 
           </div>
 
-          <div class="form-floating">
+          <div class="form-floating my-5">
             <textarea class="form-control" name="additional-comments" id="additional-comments" placeholder="Any additional comments?"></textarea>
             <label for="additional-comments" class="form-label">Comments</label>
           </div>
-        <div class="container-fluid">
-        <button type="submit" value="send" btn btn-primary justify-content-center style="width: 80%;">Submit</button>
+        <div class="container-fluid my-5 d-flex justify-content-center">
+        <button type="submit" value="send" class="btn btn-light shadow px-2 m-3 roboto" style="width: 80%;">Submit</button>
+
+
+
         </div>
       </form>
+
+      <div id="myPopup">
+        <h2>Thank you!</h2>
+        <p>Your form has been submitted.</p>
+        <button id="closePopup">Close</button>
+      </div>
+
 </main>
 
 <footer class="container-fluid pb-4">
@@ -169,7 +184,7 @@
     </table>
     </div>
 
-    <div class="col-6 col-md-4 text-center">
+    <div class="col-6 col-md-4 text-center footer-info">
         <h5>ADDRESS</h5>
         <p><a href="https://www.google.com/search?q=13220+E+Van+Buren+St+Suite+%23104%2C+Goodyear%2C+AZ+85338&rlz=1C1VDKB_enUS1023US1023&oq=13220+E+Van+Buren+St+Suite+%23104%2C+Goodyear%2C+AZ+85338&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBBzYwNWowajmoAgCwAgE&sourceid=chrome&ie=UTF-8" class="link-secondary"> E Van Buren St Suite #104, Goodyear, AZ 85338</a></p>
 

@@ -109,7 +109,9 @@
 
 
 .offcanvas-logo {
-    height: 75px;
+/*     height: 75px;
+ */
+    width: 75px;
 
 }
 
@@ -168,7 +170,7 @@ main {
 .section-title {
     
     text-align: center;
-    font-size: 10vw;
+    font-size: 1.5em;
 /*     color: transparent;
     background: #666666;
     -webkit-background-clip: text;
@@ -191,12 +193,16 @@ main {
     background-color: #ead5cf;
     color: black;
     width: 100vw;
-    padding: 20px;
+    padding: 30px;
     background-image: url(images/pexels-moose-photos-170195-1029894.jpg);
     background-size: cover;
     font-size: small;
 
 
+
+}
+
+.alternate-section {
 
 }
 
@@ -224,6 +230,14 @@ main {
 .contact-links {
     width: 85vw;
     padding: 10px;
+}
+
+#myPopup {
+    display: none;
+     position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+     background-color: white; 
+     padding: 20px; 
+     border: 1px solid black;
 }
 
 .hours-map {
