@@ -64,6 +64,16 @@
     text-shadow: 1px 4px 4px #555555;
   }
 
+  .scroll-section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+
+}
+.scroll-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}  
   .icon {
     width: 45px;
 
@@ -114,6 +124,16 @@
     width: 75px;
 
 }
+
+.offcanvas {
+    background-image: url(images/modal-background.jpg);
+    background-size: cover;
+}
+
+.list-group {
+    background: rgba(0,0,0 .0);
+}
+
 
 .title-centered {
     text-align: center;

@@ -78,13 +78,14 @@
 
           </div>
           <div class="m-3 my-5 form-check p-0">
+            <h4 class="border-bottom mb-2">How would you like to be contacted?</h4>
             <input type="radio" id="call" name="contact-preference" value="call" required>
             <label for="call">Call</label>
             <input type="radio" id="text" name="contact-preference" value="text">
             <label for="text">Text</label>
           </div>
         <div class="m-3 my-5">
-            <h4>Preferred day(s)</h4>
+            <h4 class="border-bottom mb-2">Preferred day(s)</h4>
             <div class="mb-3 form-check-inline">
             <input type="checkbox" name="day1" value="Monday" class="form-check-input" id="day1">
             <label class="form-check-label" for="day1">M</label>
@@ -111,9 +112,9 @@
             </div>        
 
         </div>
-          <div class="my-5">
-            <label for="services">Services</label>
-            <select name="services" id="services">
+          <div class="m-3 my-5">
+<!--             <label for="services">Services</label>
+ -->            <select name="services" id="services">
                 <option value="">Choose Services</option>
                 <option value="manicure">Manicure</option>
                 <option value="pedicure">Pedicure</option>
@@ -125,7 +126,7 @@
 
           </div>
 
-          <div class="form-floating my-5">
+          <div class="form-floating m-3 my-5">
             <textarea class="form-control" name="additional-comments" id="additional-comments" placeholder="Any additional comments?"></textarea>
             <label for="additional-comments" class="form-label">Comments</label>
           </div>
@@ -139,7 +140,7 @@
 
       <div id="myPopup">
         <h2>Thank you!</h2>
-        <p>Your form has been submitted.</p>
+        <p>We will be reaching out soon to confirm an appointment</p>
         <button id="closePopup">Close</button>
       </div>
 

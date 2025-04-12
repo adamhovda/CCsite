@@ -1,6 +1,7 @@
 
 const popup = document.getElementById('myPopup');
 const closeBtn = document.getElementById('closePopup');
+const scrollSections = document.querySelectorAll('.scroll-section');
 
 // Email Booking 
 
@@ -41,13 +42,26 @@ window.onload = function() {
     });
 }
 
-// confirm booking pop up
+// scrolling code gemini
 
-function confirmAlert() {
-    alert("Thank you for your Booking inquiry.  We will respond as soon as able.")
+
+function checkVisibility() {
+    scrollSections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        // Adjust the threshold as needed.  Smaller value = earlier fade-in.
+        const isVisible = sectionTop < windowHeight * 0.8; // 80% of the window height
+
+        if (isVisible) {
+            section.classList.add('active');
+        } else {
+            section.classList.remove('active'); //remove the class if it goes out of view
+        }
+    });
 }
 
-
-// create custom confirm pop up
+window.addEventListener('scroll', checkVisibility);
+checkVisibility(); // Call it on initial load, in case elements are already in view
 
 
