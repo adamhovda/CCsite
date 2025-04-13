@@ -99,7 +99,7 @@
 .navbar-secondary {
     background-color: white;
     color: black;
-    background-image: url(images/pinkbluesmoke.jpg);
+    background-image: url(images/pinkbluesmokesmall.jpg);
     background-position: bottom;
     background-size: cover;
 
@@ -133,7 +133,7 @@ body {
 }
 
 .offcanvas {
-    background-image: url(images/pinksmoke.jpg);
+    background-image: url(images/pinksmokesmall.jpg);
     background-size: cover;
 }
 
