@@ -120,20 +120,9 @@
     background-size: cover;
   }
 
-body {
-
-
-}
-
-.gallery {
-    
-}
-
 .link-button {
     background-color: #DDF0F6;
-
 }
-
 
 .offcanvas-logo {
 /*     height: 75px;
@@ -163,8 +152,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 
 main {
