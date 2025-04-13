@@ -108,7 +108,7 @@
 
 .parallax {
     /* The image used */
-    background-image: url('images/pinksmokelight.jpg');
+    background-image: url('images/pinksmokedarkbg.jpg');
   
     /* Full height */
     min-height: 300px; 
@@ -267,10 +267,12 @@ main {
 
 
 
+
 }
 
 th, td {
-    background-color: #DDF0F6 !important;
+    background-color: rgb(51, 51, 51) !important;
+    color: whitesmoke !important; 
 }
 .hours {
 
@@ -284,7 +286,7 @@ th, td {
 }
 
 footer {
-    background-color: #DDF0F6;
+    background-color: rgb(51, 51, 51);
     width: 85vw;
     padding-top: 20px;
 
@@ -293,6 +295,7 @@ footer {
 
 .footer-info{
     font-size: smaller;
+    color: whitesmoke;
 }
 
 .fade-in {
