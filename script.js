@@ -61,7 +61,8 @@ function checkVisibility() {
     });
 }
 
+
+
 window.addEventListener('scroll', checkVisibility);
 checkVisibility(); // Call it on initial load, in case elements are already in view
-
 
