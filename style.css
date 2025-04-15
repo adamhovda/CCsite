@@ -18,7 +18,6 @@
 
   }
 
-  
 .catamaran-title {
     font-family: "Catamaran", sans-serif;
     font-optical-sizing: auto;
@@ -27,42 +26,24 @@
     
   }
 
-  .domine-p {
-    font-family: "Domine", serif;
-    font-optical-sizing: auto;
+  .herr-von-muellerhoff-regular {
+    font-family: "Herr Von Muellerhoff", cursive;
     font-weight: 400;
     font-style: normal;
   }
 
-  .yellowtail-regular {
-    font-family: "Yellowtail", cursive;
+  .arizonia-regular {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .lobster-regular {
+    font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
-
-  .meow-script-regular {
-    font-family: "Meow Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
   
-
-  .engraved-text {
-    background-color: #666666;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 3px 5px 1px rgba(245, 245, 245, 0.5);
-  }
-
-  .embossed-text {
-    background-color: #666666;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: #f0f0f0;
-    text-shadow: 1px 4px 4px #555555;
-  }
 
   .scroll-section {
     opacity: 0;
@@ -108,8 +89,9 @@
 
 .parallax {
     /* The image used */
-    background-image: url('images/pinksmokedarkbg.webp');
-  
+    background-image: url('images/pinksmokelightsmall.jpg');
+    box-shadow: 0 0 5px 10px white inset;
+
     /* Full height */
     min-height: 300px; 
   
@@ -226,6 +208,7 @@ main {
 .service-overlay {
     font-size: 18vw;
     color: white;
+    font-weight: bolder;
 }
 
 .services {
