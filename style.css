@@ -66,6 +66,7 @@
 .navbar-primary {
     width: 85vw;
     z-index: 5;
+    
 }
 
 .navbar-secondary {
@@ -147,7 +148,7 @@ main {
 
     position: relative;
     text-align: center;
-    width: 85vw;
+    width: 95vw;
 
 
 
@@ -156,7 +157,11 @@ main {
 .centered {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;    background-color: white;
+    color: whitesmoke;
+    background-image: url(images/pinksmokelight.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
     transform: translate(-50%, -50%);
 
 
@@ -178,23 +183,38 @@ main {
 .section-title {
     color: whitesmoke;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding: 30px;
-    background-image: url(images/pinksmokelight.jpg);
+/*     background-image: url(images/pinksmokelight.jpg);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 50%; */
+    background-color: white;
+    color: whitesmoke;
+    background-image: url(images/pinksmokelight.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
 }
 
 
 
 .section {
 
-    color: whitesmoke;
+    color:black;
     width: 100vw;
     padding: 30px;
     font-size: medium;
+/*     background: #9b2a83;
+    background: linear-gradient(90deg, rgba(155, 42, 131, 0.62) 1%, rgba(199, 87, 173, 0.88) 50%, rgba(237, 83, 224, 0.17) 100%); */
 }
 
+.service-img {
+    width: 85vw;
+}
+
+.accordion-button::after, 
+.accordion-button:not(.collapsed)::after {
+    background-image: unset !important;
+}
 
 
 .about {
@@ -301,6 +321,10 @@ footer {
       width: 70vw;
     }
 
+    .section-title {
+        width: 70vw;
+    }
+
     .section {
         width: 70vw;
         font-size: x-large;
@@ -309,5 +333,37 @@ footer {
     .services {
         width: 70vw
     }
+
 }
 
+@media screen and (min-width: 1400px){
+    .service-overlay{
+        font-size: 5vw;
+    }
+
+    .hero-overlay {
+        font-size: 11vw;
+    }
+
+     .heroContainer {
+      width: 50vw;
+    }
+
+    .section-title {
+        width: 50vw;
+    }
+
+    .section {
+        width: 50vw;
+        font-size: x-large;
+    }
+
+    .services {
+        width: 50vw;
+    }
+
+    footer {
+        width: 50vw;
+    }
+    
+}
