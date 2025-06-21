@@ -103,6 +103,10 @@
     background-size: cover;
   }
 
+  .headline {
+
+  }
+
 .link-button {
     background: #C77185;
     background: linear-gradient(90deg, rgba(199, 113, 133, 0.62) 0%, rgba(206, 84, 124, 0.88) 100%, rgba(204, 148, 155, 0.28) 50%);
