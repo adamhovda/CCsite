@@ -199,7 +199,27 @@ main {
     background-size: cover;
 }
 
+hr {
+    border: none;
+    overflow: visible;
+    text-align: center;
+    height: 5px; 
 
+   
+}
+
+.hr{
+    margin: 30px;
+}
+
+hr::after {
+    background: #fff;
+    color: black;
+    content: "CC";
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+  }
 
 .section {
 
@@ -207,8 +227,7 @@ main {
     width: 100vw;
     padding: 30px 30px 15px 30px;
     font-size: medium;
-/*     background: #9b2a83;
-    background: linear-gradient(90deg, rgba(155, 42, 131, 0.62) 1%, rgba(199, 87, 173, 0.88) 50%, rgba(237, 83, 224, 0.17) 100%); */
+    
 }
 
 .service-img {
@@ -329,7 +348,7 @@ footer {
         width: 70vw;
     }
 
-    .section {
+    .section{
         width: 70vw;
         font-size: x-large;
     }
@@ -337,6 +356,11 @@ footer {
     .services {
         width: 70vw
     }
+
+    hr::after {
+
+        top: -20px;
+      }
 
 }
 
