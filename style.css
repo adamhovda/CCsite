@@ -43,7 +43,7 @@
     font-style: normal;
   }
   
-  
+
 
   .scroll-section {
     opacity: 0;
@@ -120,10 +120,7 @@
 }
 
 .offcanvas-logo {
-/*     height: 75px;
- */
     width: 75px;
-
 }
 
 .offcanvas {
@@ -199,22 +196,24 @@ main {
     text-align: center;
     font-size: 2.5em;
     padding: 30px;
-/*     background-image: url(images/pinksmokelight.jpg);
-    background-size: cover;
-    background-position: 50% 50%; */
-    background-color: white;
-    color: whitesmoke;
+    margin: 0 !important;
+    background-color: rgb(255, 255, 255);
     background-image: url(images/pinksmokelight.jpg);
     background-position: 50% 30%;
     background-size: cover;
 }
 
 .bg-logo {
- 
-    background-image: url(images/ccnlogocleanopaque.webp);
+    background-image: url(images/ccnlogocleanopaque.webp), linear-gradient(0deg,rgba(255, 255, 255, 0.3) 0%, rgba(199, 113, 133, 0.43) 21%, rgba(199, 113, 133, 0.63) 47%, rgba(199, 113, 133, 0.48) 77%, rgba(255, 255, 255, 0) 100%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+}
+
+.bg-gradient {
+    background: #C77185;
+    background: linear-gradient(0deg, rgba(199, 113, 133, 0.3) 0%, rgba(199, 113, 133, 0.85) 100%);
 }
 
 hr {
