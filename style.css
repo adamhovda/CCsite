@@ -161,11 +161,9 @@ main {
     position: relative;
     text-align: center;
     width: 100vw;
+   }
 
-
-
-}
-
+   
 .centered {
     position: absolute;
     top: 50%;
@@ -209,6 +207,14 @@ main {
     background-image: url(images/pinksmokelight.jpg);
     background-position: 50% 30%;
     background-size: cover;
+}
+
+.bg-logo {
+ 
+    background-image: url(images/ccnlogocleanopaque.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 hr {
